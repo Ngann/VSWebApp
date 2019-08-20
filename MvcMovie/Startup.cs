@@ -34,6 +34,7 @@ namespace MvcMovie
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //register the db context
             services.AddDbContext<MvcMovieContext>(options =>
             options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
 

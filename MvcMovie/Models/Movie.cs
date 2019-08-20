@@ -9,7 +9,7 @@ namespace MvcMovie.Models
         // The Id field which is required by the database for the primary key.
 
         public int Id { get; set; }
-        public int Title { get; set; }
+        public string Title { get; set; }
 
 
         //The DataType attribute specifies the type of the data (Date). With this attribute:

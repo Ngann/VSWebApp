@@ -36,7 +36,7 @@ namespace MvcMovie
 
             //register the db context to use sqllite
             services.AddDbContext<MvcMovieContext>(options =>
-            options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
+                options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
